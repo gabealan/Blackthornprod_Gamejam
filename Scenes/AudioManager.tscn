@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scenes/audio_manager.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/audio_manager.gd" type="Script" id=1]
+
 
 [node name="audio_manager" type="Node2D"]
 script = ExtResource( 1 )
@@ -12,7 +13,15 @@ script = ExtResource( 1 )
 [node name="effects" type="Node" parent="."]
 
 [node name="effects_player1" type="AudioStreamPlayer2D" parent="effects"]
+volume_db = -20.0
 
 [node name="effects_player2" type="AudioStreamPlayer2D" parent="effects"]
+volume_db = -20.0
 
 [node name="effects_player3" type="AudioStreamPlayer2D" parent="effects"]
+volume_db = -20.0
+
+[node name="walking" type="Node" parent="."]
+
+[node name="walk_effects_player" type="AudioStreamPlayer" parent="walking"]
+volume_db = -20.0
