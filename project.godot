@@ -8,9 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://Scripts/Inventory.gd"
+}, {
+"base": "Resource",
+"class": "Item",
+"language": "GDScript",
+"path": "res://Scripts/Item.gd"
+} ]
 _global_script_class_icons={
-
+"Inventory": "",
+"Item": ""
 }
 
 [application]
@@ -25,10 +36,10 @@ audio_manager="*res://Scenes/AudioManager.tscn"
 
 [display]
 
-window/size/width=960
-window/size/height=480
+window/size/width=320
+window/size/height=180
 window/size/test_width=1280
-window/size/test_height=960
+window/size/test_height=720
 
 [input]
 

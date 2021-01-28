@@ -13,6 +13,12 @@ var is_crouched = false
 var is_sprinting = false
 var stamina = 100
 
+onready var spawn_point = get_parent().get_node("SpawnPoint")
+
+
+func _ready():
+	position = spawn_point.position
+
 func _physics_process(delta):
 	if Input.is_action_just_pressed("crouch"):
 		crouch()
